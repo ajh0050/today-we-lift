@@ -2,6 +2,7 @@ const workouts = [
     {
         "title": "Bread & Butter",
         "body_part": "chest",
+        "id": 0,
         "exercises": [
             {
                 "name": "Decline Bench Press",
@@ -35,6 +36,7 @@ const workouts = [
     {
         "title": "Building Blocks",
         "body_part": "chest",
+        "id": 1,
         "exercises": [
             {
                 "name": "Flat Bench Press",
@@ -69,6 +71,7 @@ const workouts = [
     {
         "title": "Battle Royale",
         "body_part": "chest",
+        "id": 2,
         "exercises": [
             {
                 "name": "Body Weight Bench Press",
@@ -101,6 +104,7 @@ const workouts = [
     {
         "title": "Iron Blizzard",
         "body_part": "chest",
+        "id": 3,
         "exercises": [
             {
                 "name": "Incline Bench Press",
@@ -134,6 +138,7 @@ const workouts = [
     {
         "title": "Hoorah",
         "body_part": "chest",
+        "id": 4,
         "exercises": [
             {
                 "name": "Decline Dumbbell Press",
@@ -180,6 +185,7 @@ const workouts = [
     {
         "title": "Good Luck",
         "body_part": "chest",
+        "id": 5,
         "exercises": [
             {
                 "name": "Flat Dumbbell Press (Pyramid)",
@@ -214,6 +220,7 @@ const workouts = [
     {
         "title": "Grow!",
         "body_part": "chest",
+        "id": 6,
         "exercises": [
             {
                 "name": "Pushups",
@@ -247,6 +254,7 @@ const workouts = [
     {
         "title": "All Day",
         "body_part": "chest",
+        "id": 7,
         "exercises": [
             {
                 "name": "Weighted Dips",
@@ -282,6 +290,7 @@ const workouts = [
     {
         "title": "Against the Grain",
         "body_part": "chest",
+        "id": 8,
         "exercises": [
             {
                 "name": "Reverse Grip Bench Press",
@@ -315,6 +324,7 @@ const workouts = [
     {
         "title": "Speed Things Up: Chest",
         "body_part": "chest",
+        "id": 9,
         "exercises": [
             {
                 "name": "Incline Bench Press",
@@ -347,6 +357,7 @@ const workouts = [
     {
         "title": "The Original",
         "body_part": "back",
+        "id": 10,
         "exercises": [
             {
                 "name": "Bent Over Barbell Rows",
@@ -388,6 +399,7 @@ const workouts = [
     {
         "title": "Slap in the Face",
         "body_part": "back",
+        "id": 11,
         "exercises": [
             {
                 "name": "Barbell Deadlifts w/ Body Weight",
@@ -415,6 +427,7 @@ const workouts = [
     {
         "title": "Get Wide",
         "body_part": "back",
+        "id": 12,
         "exercises": [
             {
                 "name": "Wide Grip Lat Pulldowns",
@@ -448,6 +461,7 @@ const workouts = [
     {
         "title": "Get Dense",
         "body_part": "back",
+        "id": 13,
         "exercises": [
             {
                 "name": "Barbell Deadlifts",
@@ -480,6 +494,7 @@ const workouts = [
     {
         "title": "Wings",
         "body_part": "back",
+        "id": 14,
         "exercises": [
             {
                 "name": "Dumbbell Deadlifts",
@@ -515,6 +530,7 @@ const workouts = [
     {
         "title": "Easy on Paper",
         "body_part": "back",
+        "id": 15,
         "exercises": [
             {
                 "name": "Barbell Deadlifts",
@@ -547,6 +563,7 @@ const workouts = [
     {
         "title": "Tradition with a Twist",
         "body_part": "back",
+        "id": 16,
         "exercises": [
             {
                 "name": "Wide Grip Lat Pulldowns",
@@ -580,6 +597,7 @@ const workouts = [
     {
         "title": "Back Burner",
         "body_part": "back",
+        "id": 17,
         "exercises": [
             {
                 "name": "Reverse Grip Lat Pulldowns",
@@ -612,6 +630,7 @@ const workouts = [
     {
         "title": "The V",
         "body_part": "back",
+        "id": 18,
         "exercises": [
             {
                 "name": "Dumbbell Pullovers",
@@ -645,6 +664,7 @@ const workouts = [
     {
         "title": "Speed Things Up: Back",
         "body_part": "back",
+        "id":19,
         "exercises": [
             {
                 "name": "Barbell Deadlifts",
@@ -677,6 +697,7 @@ const workouts = [
     {
         "title": "Gun Show",
         "body_part": "arms",
+        "id": 20,
         "exercises": [
             {
                 "name": "Alternating Dumbbell Curls (Pyramid)",
@@ -726,6 +747,7 @@ const workouts = [
     {
         "title": "Armed and Ready",
         "body_part": "arms",
+        "id": 21,
         "exercises": [
             {
                 "name": "EZ Bar Preacher Curls",
@@ -766,6 +788,7 @@ const workouts = [
     {
         "title": "Mind-Muscle",
         "body_part": "arms",
+        "id": 22,
         "exercises": [
             {
                 "name": "Incline Dumbbell Curls",
@@ -803,6 +826,7 @@ const workouts = [
     {
         "title": "This Sucks",
         "body_part": "arms",
+        "id": 23,
         "exercises": [
             {
                 "name": "Alternating Dumbbell Hammer/Standard Curls (Pyramid)",
@@ -843,6 +867,7 @@ const workouts = [
     {
         "title": "Sleeveless",
         "body_part": "arms",
+        "id": 24,
         "exercises": [
             {
                 "name": "Overhead Dumbbell Extensions",
@@ -881,6 +906,7 @@ const workouts = [
     {
         "title": "Burn, Burn, Burn",
         "body_part": "arms",
+        "id": 25,
         "exercises": [
             {
                 "name": "EZ Bar Curls",
@@ -921,6 +947,7 @@ const workouts = [
     {
         "title": "Partner Up",
         "body_part": "arms",
+        "id": 26,
         "exercises": [
             {
                 "name": "Standing EZ Bar Preacher Curls",
@@ -960,6 +987,7 @@ const workouts = [
     {
         "title": "Giant Growth",
         "body_part": "arms",
+        "id": 27,
         "exercises": [
             {
                 "name": "Lying Dumbbell Triceps Extensions",
@@ -1009,6 +1037,7 @@ const workouts = [
     {
         "title": "Speed Things Up: Arms",
         "body_part": "arms",
+        "id": 28,
         "exercises": [
             {
                 "name": "Straight Bar Curls",
@@ -1046,6 +1075,7 @@ const workouts = [
     {
         "title": "BILT",
         "body_part": "legs",
+        "id": 29,
         "exercises": [
             {
                 "name": "Barbell Squats",
@@ -1084,6 +1114,7 @@ const workouts = [
     {
         "title": "Squats!",
         "body_part": "legs",
+        "id": 30,
         "exercises": [
             {
                 "name": "Barbell Squats",
@@ -1111,6 +1142,7 @@ const workouts = [
     {
         "title": "The Athlete",
         "body_part": "legs",
+        "id": 31,
         "exercises": [
             {
                 "name": "Leg Extensions",
@@ -1146,6 +1178,7 @@ const workouts = [
     {
         "title": "Tree Trunks",
         "body_part": "legs",
+        "id": 32,
         "exercises": [
             {
                 "name": "Barbell Sumo Squats",
@@ -1181,6 +1214,7 @@ const workouts = [
     {
         "title": "One at a Time",
         "body_part": "legs",
+        "id": 33,
         "exercises": [
             {
                 "name": "Barbell Squats",
@@ -1215,6 +1249,7 @@ const workouts = [
     {
         "title": "Growing Pains",
         "body_part": "legs",
+        "id": 34,
         "exercises": [
             {
                 "name": "Leg Press",
@@ -1247,6 +1282,7 @@ const workouts = [
     {
         "title": "Afterburner",
         "body_part": "legs",
+        "id": 35,
         "exercises": [
             {
                 "name": "Front Squats",
@@ -1281,6 +1317,7 @@ const workouts = [
     {
         "title": "XPlode",
         "body_part": "legs",
+        "id": 36,
         "exercises": [
             {
                 "name": "Box Squats",
@@ -1318,6 +1355,7 @@ const workouts = [
     {
         "title": "Game On",
         "body_part": "legs",
+        "id": 37,
         "exercises": [
             {
                 "name": "Leg Extensions",
@@ -1351,6 +1389,7 @@ const workouts = [
     {
         "title": "Speed Things Up: Legs",
         "body_part": "legs",
+        "id": 38,
         "exercises": [
             {
                 "name": "Barbell Squats",
@@ -1383,6 +1422,7 @@ const workouts = [
     {
         "title": "Get Some",
         "body_part": "shoulders",
+        "id": 39,
         "exercises": [
             {
                 "name": "Dumbbell Shoulder Press",
@@ -1423,6 +1463,7 @@ const workouts = [
     {
         "title": "It's Not Over",
         "body_part": "shoulders",
+        "id": 40,
         "exercises": [
             {
                 "name": "Hammer Strength Shoulder Press",
@@ -1460,6 +1501,7 @@ const workouts = [
     {
         "title": "Rock Solid",
         "body_part": "shoulders",
+        "id": 41,
         "exercises": [
             {
                 "name": "Dumbbell Lateral Raises",
@@ -1497,6 +1539,7 @@ const workouts = [
     {
         "title": "Beast Mode",
         "body_part": "shoulders",
+        "id": 42,
         "exercises": [
             {
                 "name": "Barbell Shoulder Press",
@@ -1536,6 +1579,7 @@ const workouts = [
     {
         "title": "You vs. You",
         "body_part": "shoulders",
+        "id": 43,
         "exercises": [
             {
                 "name": "Barbell Clean and Press",
@@ -1568,6 +1612,7 @@ const workouts = [
     {
         "title": "Super Human",
         "body_part": "shoulders",
+        "id": 44,
         "exercises": [
             {
                 "name": "Dumbbell Arnold Press",
@@ -1606,6 +1651,7 @@ const workouts = [
     {
         "title": "Pre-Exhaust",
         "body_part": "shoulders",
+        "id": 45,
         "exercises": [
             {
                 "name": "Dumbbell Lateral Raises",
@@ -1644,6 +1690,7 @@ const workouts = [
     {
         "title": "$#%*",
         "body_part": "shoulders",
+        "id": 46,
         "exercises": [
             {
                 "name": "Barbell Shoulder Press",
@@ -1681,6 +1728,7 @@ const workouts = [
     {
         "title": "Cannons",
         "body_part": "shoulders",
+        "id": 47,
         "exercises": [
             {
                 "name": "Dumbbell Shoulder Press",
@@ -1720,6 +1768,7 @@ const workouts = [
     {
         "title": "Speed Things Up: Shoulders",
         "body_part": "shoulders",
+        "id": 48,
         "exercises": [
             {
                 "name": "Barbell Shoulder Press",
@@ -1752,6 +1801,7 @@ const workouts = [
     {
         "title": "Calf Blast",
         "body_part": "extra",
+        "id": 49,
         "exercises": [
             {
                 "name": "Standing Calf Raises",
@@ -1775,6 +1825,7 @@ const workouts = [
     {
         "title": "Trap Blast",
         "body_part": "extra",
+        "id": 50,
         "exercises": [
             {
                 "name": "Barbell Shrugs",
@@ -1793,6 +1844,7 @@ const workouts = [
     {
         "title": "Ab Blast - Burn",
         "body_part": "extra",
+        "id": 51,
         "exercises": [
             {
                 "name": "Hanging Leg Raises",
@@ -1826,6 +1878,7 @@ const workouts = [
     {
         "title": "Ab Blast - Weighted",
         "body_part": "extra",
+        "id": 52,
         "exercises": [
             {
                 "name": "Decline Bench Weighted Sit-Ups",
