@@ -2,11 +2,14 @@ import React from 'react';
 import styles from './Workout.module.css';
 
 const Workout = ({ workout }) => {
-    console.log('workout at render of workout comoponent', workout)
     const exercises = workout.exercises?.map((exercise) => {
+        const commonProps = {
+            key: index,
+            className: styles.card,
+        };
         if (typeof exercise.reps == 'string' && !exercise.sets) {
             return (
-                <div className={styles.card}>
+                <div {...commonProps}>
                     <p className={styles.exerciseTitle}>{exercise.name}</p>
                     <p className={styles.exerciseNotes}>{exercise.notes}</p>
                     <p className={styles.reps}>{exercise.reps}</p>
@@ -15,18 +18,18 @@ const Workout = ({ workout }) => {
         }
         if (typeof exercise.reps == 'string' && exercise.sets) {
             return (
-                <div className={styles.card}>
+                <div {...commonProps}>
                     <p className={styles.exerciseTitle}>{exercise.name}</p>
                     <p className={styles.exerciseNotes}>{exercise.notes}</p>
                     {Array.from({ length: exercise.sets }, () => (
-                        <p className={styles.reps}>{exercise.reps}</p>
+                        <p key={i} className={styles.reps}>{exercise.reps}</p>
                     ))}
                 </div>
             );
         }
         if (exercise.reps?.length && !exercise.sets) {
             return (
-                <div className={styles.card}>
+                <div {...commonProps}>
                     <p className={styles.exerciseTitle}>{exercise.name}</p>
                     <p className={styles.exerciseNotes}>{exercise.notes}</p>
                     <p className={styles.reps}>{exercise.reps.join(', ')}</p>
@@ -35,11 +38,11 @@ const Workout = ({ workout }) => {
         }
         if (exercise.reps?.length && exercise.sets) {
             return (
-                <div className={styles.card}>
+                <div {...commonProps}>
                     <p className={styles.exerciseTitle}>{exercise.name}</p>
                     <p className={styles.exerciseNotes}>{exercise.notes}</p>
                     {Array.from({ length: exercise.sets }, () => (
-                        <p className={styles.reps}>{exercise.reps.join(', ')}</p>
+                        <p key={i} className={styles.reps}>{exercise.reps.join(', ')}</p>
                     ))}
                 </div>
             );
