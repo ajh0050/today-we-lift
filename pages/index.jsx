@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import workouts from '../data/workouts'
+import Workout from '../src/components/Workout'
 
 export default function Home() {
   const [bodyPart, setBodyPart] = useState(null)
@@ -9,6 +10,7 @@ export default function Home() {
     if (bodyPart) {
       getRandomWorkout();
     }
+    console.log('workout', workout)
   }, [bodyPart])
 
 
@@ -17,11 +19,11 @@ export default function Home() {
   }
 
   const getRandomWorkout = () => {
-    const filteredArray = workouts.filter((workout) => workout.bodyPart === bodyPart);
+    const filteredArray = workouts.filter((workout) => workout.body_part === bodyPart);
     function getRandomIndex(arr) {
       return Math.floor(Math.random() * arr.length);
     }
-    setWorkout((getRandomIndex(filteredArray)));
+    setWorkout(filteredArray[(getRandomIndex(filteredArray))]);
   };
 
   const resetBodyPart = () => {
@@ -40,9 +42,7 @@ export default function Home() {
         <button className="btn btn-ghost normal-case text-xl" id="extra" onClick={handleBodyPart}>Extra</button>
       </div> : <button onClick={resetBodyPart}>choose body part comonent</button>}
 
-      <div>
-
-      </div>
+      {workout.title && <Workout workout={workout} />}
     </>
 
   )
