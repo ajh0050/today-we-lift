@@ -1,0 +1,15 @@
+.headerContainer {
+    padding: 1rem;
+  }
+  
+  .appTitle {
+    font-size: 4rem;
+    text-align: center;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .appTitle {
+      font-size: 2rem;
+    }
+  }
