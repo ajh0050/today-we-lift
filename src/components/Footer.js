@@ -2,6 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     const containerStyle = {
+        marginTop: 'auto',
         display: 'flex',
         displayDirection: 'row',
         justifyContent: 'center',
@@ -15,7 +16,7 @@ const Footer = () => {
     return (
         <footer className="footer footer-center p-4 bg-base-300 text-base-content" style={containerStyle}>
             <div>
-                <p>Copyright © 2023 - All right reserved by <a target="_blank" href="https://github.com/ajh0050" style={linkStyle}>Adam</a></p>
+                <p>Copyright © 2023 - All rights reserved by <a target="_blank" href="https://github.com/ajh0050" style={linkStyle}>Adam</a></p>
             </div>
         </footer>
     )
