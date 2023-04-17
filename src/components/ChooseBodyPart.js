@@ -1,21 +1,18 @@
 import React from 'react';
+import styles from './ChooseBodyPart.module.css';
 
-const ChooseBodyPart = () => {
-    const [bodyPart, setBodyPart] = useState('');
-
-    const handleBodyPart = (e) => {
-        setBodyPart(e.target.id);
-    }
-
+const ChooseBodyPart = (props) => {
     return (
-        <div>
-            <h1>Choose Body Part</h1>
-            <button className="btn btn-ghost normal-case text-xl" id="chest" onClick={(e) = handleBodyPart()}>Chest</button>
-            <button className="btn btn-ghost normal-case text-xl" id="back" onClick={(e) = handleBodyPart()}>Back</button>
-            <button className="btn btn-ghost normal-case text-xl" id="legs" onClick={(e) = handleBodyPart()}>Legs</button>
-            <button className="btn btn-ghost normal-case text-xl" id="arms" onClick={(e) = handleBodyPart()}>Arms</button>
-            <button className="btn btn-ghost normal-case text-xl" id="shoulders" onClick={(e) = handleBodyPart()}>Shoulders</button>
-            <button className="btn btn-ghost normal-case text-xl" id="extra" onClick={(e) = handleBodyPart()}>Extra</button>
+        <div className={styles.ChooseBodyPartContainer}>
+            <p className={styles.label}>Choose Body Part</p>
+            <div className={styles.buttonContainer}>
+                <button className={styles.button} id="chest" onClick={props.handleBodyPart}>Chest</button>
+                <button className={styles.button} id="back" onClick={props.handleBodyPart}>Back</button>
+                <button className={styles.button} id="legs" onClick={props.handleBodyPart}>Legs</button>
+                <button className={styles.button} id="arms" onClick={props.handleBodyPart}>Arms</button>
+                <button className={styles.button} id="shoulders" onClick={props.handleBodyPart}>Shoulders</button>
+                <button className={styles.button} id="extra" onClick={props.handleBodyPart}>Extra</button>
+            </div>
         </div>
     );
 }
