@@ -1751,7 +1751,7 @@ const workouts = [
     },
     {
         "title": "Calf Blast",
-        "body_part": "calves",
+        "body_part": "extra",
         "exercises": [
             {
                 "name": "Standing Calf Raises",
@@ -1774,7 +1774,7 @@ const workouts = [
     },
     {
         "title": "Trap Blast",
-        "body_part": "traps",
+        "body_part": "extra",
         "exercises": [
             {
                 "name": "Barbell Shrugs",
@@ -1792,7 +1792,7 @@ const workouts = [
     },
     {
         "title": "Ab Blast - Burn",
-        "body_part": "abs",
+        "body_part": "extra",
         "exercises": [
             {
                 "name": "Hanging Leg Raises",
@@ -1825,7 +1825,7 @@ const workouts = [
     },
     {
         "title": "Ab Blast - Weighted",
-        "body_part": "abs",
+        "body_part": "extra",
         "exercises": [
             {
                 "name": "Decline Bench Weighted Sit-Ups",
