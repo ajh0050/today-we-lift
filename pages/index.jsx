@@ -2,10 +2,23 @@ import React, { useState, useEffect } from 'react'
 import workouts from '../data/workouts'
 import Workout from '../src/components/Workout'
 import ChooseBodyPart from '../src/components/ChooseBodyPart'
+import styles from '../src/components/Main.module.css'
 
 export default function Home() {
   const [bodyPart, setBodyPart] = useState(null)
   const [workout, setWorkout] = useState({})
+
+  // const styles = {
+  //   fontSize: "1.5rem",
+  //   fontWeight: "bold",
+  //   textTransform: "none",
+  //   backgroundColor: "#f4f4f4",
+  //   border: "1px solid #333",
+  //   color:"#333",
+  //   padding: "10px 20px",
+  //   cursor: "pointer",
+  //   transition: "background-color 0.3s, color 0.3s"
+  // }
 
   useEffect(() => {
     if (bodyPart) {
@@ -31,8 +44,8 @@ export default function Home() {
   }
 
   return (
-    <div className="m-8 container" >
-      {!bodyPart ? <ChooseBodyPart handleBodyPart={handleBodyPart} /> : <button onClick={resetBodyPart}>choose body part comonent</button>}
+    <div className={styles.mainContainer}>
+      {!bodyPart ? <ChooseBodyPart handleBodyPart={handleBodyPart} /> : <button className={styles.button} onClick={resetBodyPart}>Choose body part</button>}
 
       {workout.title && <Workout workout={workout} />}
     </div>
