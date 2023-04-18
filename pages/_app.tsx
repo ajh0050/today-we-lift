@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <meta property="og:title" content="Today We Lift" />
         <meta property="og:description" content="Get summer body ready with this great web app that delivers intense weight lifting workouts directly to you! Free to use and mobile friendly this is the perfect tool to streamline your gym activities." />
-        <meta name="image" property="og:image" content={`${domain}/public/weights.jpeg`} />
+        <meta name="image" property="og:image" content={`${domain}/weights.jpeg`} />
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
