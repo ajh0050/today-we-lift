@@ -4,7 +4,7 @@ import Layout from '../src/components/Layout';
 import Head from 'next/head';
 
 export default function App({ Component, pageProps }: AppProps) {
-  const domain = 'https://www.todaywelift.com/';
+  const domain = 'https://www.todaywelift.com';
 
   return (
     <Layout>
