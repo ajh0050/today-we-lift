@@ -47,13 +47,6 @@ export default function Home() {
 
   return (
     <div className={styles.mainContainer}>
-       <Head>
-       <meta property="og:title" content="The best free workouts you can find" />
-       <meta property="og:image" content="https://drive.google.com/file/d/1mzEtwc0zrmmf7IKLkHgapw4wvEMnNcDm/view?usp=sharing" />
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-
       {!bodyPart ? <ChooseBodyPart handleBodyPart={handleBodyPart} /> : <button className={styles.button} onClick={resetBodyPart}>Choose body part</button>}
 
       {workout.title && <Workout workout={workout} />}
